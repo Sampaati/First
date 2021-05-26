@@ -1,0 +1,699 @@
+    1  history
+    2  ls
+    3  cd folder1
+    4  history
+    5  history -w
+    6  history
+    7  ls
+    8  cd folder1
+    9  history
+   10  history -w
+   11  history
+   12  ls -l
+   13  chmod 777 two
+   14  ls -l
+   15  chmod g-wx o-wx
+   16  chmod g-wx,o-wx
+   17  chmod g-wx;o-wx
+   18  chmod g-wx
+   19  chmod g-wx o-wx two
+   20  chmod g-wx,o-wx two
+   21  ls-l
+   22  ls -l
+   23  history man
+   24  man history
+   25  history -4
+   26  history 4
+   27  history
+   28  history 10
+   29  history -n
+   30  history +10
+   31  head history
+   32  history | grep -i 'man'
+   33  who 
+   34  dmesg
+   35  dmesg | head >dmesgfile
+   36  ls -l
+   37  cat dmesgfile 
+   38  dmesg | tail >dmesgfile
+   39  cat dmesgfile 
+   40  dmesg
+   41  clear
+   42  pwd
+   43  cd ~
+   44  ls -l
+   45  ls
+   46  sudo su-
+   47  sudo su
+   48  pwd
+   49  cd -
+   50  cd /
+   51  ls
+   52  cd home
+   53  ls
+   54  cd user1
+   55  id user1
+   56  usermod -u 1002
+   57  id user1
+   58  sudo usermod -u 1002
+   59  usermod -p
+   60  usermod -p sharath
+   61  usermod -u 1002 user1
+   62  sudo usermod -u 1002 user1
+   63  id user1
+   64  sudo usermod -u 1001 user1
+   65  id user1
+   66  sudo usermod -g 1002 user1
+   67  id sharath
+   68  sudo usermod -g 1000 user1
+   69  id user1
+   70  sudo usermod -g 1001 user1
+   71  id user1
+   72  history 
+   73  deluser user1
+   74  sudo su
+   75  nslookup google.com
+   76  traceroute
+   77  trace
+   78  sudo apt install traceroute
+   79  trace
+   80  traceroute
+   81  traceroute -p
+   82  history
+   83  clear
+   84  history
+   85  history | grep -i 'trace'
+   86  clear
+   87  history 
+   88  pwd
+   89  history 
+   90  clear
+   91  ls -l
+   92  cd folder1
+   93  ls
+   94  cat two
+   95  cat one three four five six oneoutput totaloutput errors.txt
+   96  cat errors.txt
+   97  cat totaloutput 
+   98  cat errors.txt
+   99  ls -l | grep -i'errors' >out
+  100  cat out
+  101  cta out
+  102  cat out
+  103  rm out
+  104  ls
+  105  cat one
+  106  cat two
+  107  cat three
+  108  cat two three >combined
+  109  cat combined
+  110  sort -r combined >sorted
+  111  cat sorted
+  112  ls
+  113  rm sorted
+  114  rm combined
+  115  cat two three > combined | sort -r combined >revsort
+  116  cat two three >> combined | sort -r combined >revsort
+  117  ls
+  118  cat combined 
+  119  cat revsort 
+  120  ls
+  121  rm combined | rm revsort
+  122  ls
+  123  cat two three | tee unsorted | sort -r > reserved
+  124  ls
+  125  cat unsorted reserved
+  126  rm [unsorted, reserved] | ls
+  127  rm unsorted, reserved | ls
+  128  rm "unsorted","reserved" | ls
+  129  rm unsorted | rm reserved |ls
+  130  ls
+  131  date
+  132  date >datefile | tee --delimiter =" " --fields = 1 
+  133  date | tee datefile |cut --delimiter =" " --fields = 1 
+  134  date | tee datefile |cut -delimiter =" " --fields = 1 
+  135  date | tee datefile
+  136  ls
+  137  cat datefile
+  138  date | tee datefile |cut --delimiter=' ' --fields=1
+  139  cat datefile 
+  140  clear
+  141  cd `
+  142  cd ~
+  143  pwd
+  144  cd /
+  145  pwd
+  146  grep -i'.bash'
+  147  grep -i '.bash'
+  148  ls
+  149  l.
+  150  PWD
+  151  pwd
+  152  cd /
+  153  ls 
+  154  cd etc
+  155  ls
+  156  grep 'bash*'
+  157  cat bash.bash_rc
+  158  ls -l
+  159  ls -l |grep -i 'bash'
+  160  cat bash.bashrc
+  161  nano bash.bashrc
+  162  pwd
+  163  nano bash.bashrc
+  164  sudo su
+  165  cd -
+  166  cd home
+  167  cd shartah
+  168  cd sharath
+  169  cd folder1
+  170  bow_bow
+  171  nano bash.bashrxc
+  172  cd ~
+  173  cd etc
+  174  pwd
+  175  cd /
+  176  cd etc | nano bash.bashrc
+  177  cd etc
+  178  nano bash.bashrc
+  179  bow_bow
+  180  cd /
+  181  alias -p
+  182  nano .bashrc
+  183  ls
+  184  ls -a
+  185  cd etc
+  186  ls -la | grep 'bashrc'
+  187  ls -la | grep '.bashrc'
+  188  cat bash.bashrc
+  189  ls -d
+  190  pwd
+  191  ls profile
+  192  cat profile
+  193  cd /
+  194  alias
+  195  sudo su
+  196  pwd
+  197  desktop
+  198  cd home/sharath
+  199  nano .bashrc
+  200  desktop
+  201  nano .bashrc
+  202  goog
+  203  alias desktop
+  204  desktop
+  205  goog
+  206  locate
+  207  sudo apt install locate |sudo apt install mlocate
+  208  locate passwd
+  209  locate passwd |head
+  210  locate one
+  211  locate three
+  212  locate three | wc -l
+  213  locate six | wc -l
+  214  locate myoutput | wc -l
+  215  locate myoutput 
+  216  locate -s myoutput 
+  217  locate -S myoutput 
+  218  man locate 
+  219  man locate
+  220  locate -s myoutput 
+  221  locate  myoutput 
+  222  sudo su
+  223  find
+  224  find myoutput
+  225  pwd
+  226  cd folder1
+  227  find myoutput
+  228  ls
+  229  cd /
+  230  ls
+  231  cd etc
+  232  ls
+  233  find ssl
+  234  ls
+  235  find wgetrc
+  236  locate wgetrc
+  237  cd/
+  238  cd /
+  239  cd home/sharath/folder1
+  240  find wgetrc
+  241  locate wgetrc
+  242  exit
+  243  HISTORY
+  244  history
+  245  pwd
+  246  cd folder1
+  247  ls
+  248  cat four
+  249  tac four
+  250  cat -n four
+  251  tac -n four
+  252  cat -n four >fourwithlinenumber
+  253  cat fourwithlinenumber 
+  254  tac fourwithlinenumber 
+  255  nano fourwithlinenumber 
+  256  man sort
+  257  sort fourwithlinenumber 
+  258  sort four
+  259  man sort
+  260  ls
+  261  rm fourwithlinenumber 
+  262  sort -o output four 
+  263  cat output
+  264  rm output
+  265  ls
+  266  man sort
+  267  cd -
+  268  pwd
+  269  ls
+  270  sort folder1
+  271  sort /folder1
+  272  cd folder1
+  273  sort
+  274  sort one two
+  275  sort one |sort two
+  276  man sort
+  277  ls
+  278  sort -c four
+  279  sort four >>foursorted
+  280  cat foursorted 
+  281  sort -c foursorted 
+  282  sort -r foursorted 
+  283  cat foursorted 
+  284  sort -r foursorted >foursorted 
+  285  cat foursorted 
+  286  cat foursorted
+  287  nano foursorted 
+  288  sort four >>foursorted
+  289  nano foursorted 
+  290  sort -r foursorted >>foursorted 
+  291  cat foursorted
+  292  nano foursorted 
+  293  cat foursorted
+  294  sort -c foursorted
+  295  sort -rc foursorted
+  296  ls -la
+  297  cat two
+  298  cat foursorted
+  299  sort -u foursorted 
+  300  man sort
+  301  cat foursorted
+  302  cat >>  foursorted
+  303  sort -u foursorted 
+  304  cat  foursorted
+  305  clear
+  306  cat > employeedb
+  307  cat employeedb
+  308  sort -k3
+  309  sort -k3 employeedb 
+  310  sort employeedb 
+  311  sort -rk2 employeedb 
+  312  nano employeedb
+  313  sort -k4 employeedb 
+  314  grep 'zxy' employeedb 
+  315  man grep
+  316  cd .
+  317  cd ..
+  318  pwd
+  319  ;ls
+  320  ls
+  321  grep -f 'two' folder1
+  322  cd folder1
+  323  grep -f 'two'
+  324  grep 'two' -f
+  325  man grep
+  326  cd `
+  327  cd ~
+  328  pwd
+  329  cd /
+  330  pwd
+  331  find two
+  332  locate two
+  333  locate -f two
+  334  man locate
+  335  cd home/sharath/folder1
+  336  cat four
+  337  grep -w 'which' four
+  338  grep -wn 'which' four
+  339  cat one two three four five six output myoutout
+  340  cat output
+  341  cat six
+  342  cat myoutput
+  343  cat six
+  344  cat five
+  345  pwd
+  346  ls
+  347  cat dmesgfile
+  348  grep -w 'is' dmesgfile 
+  349  grep -win 'is' ./*
+  350  clear
+  351  grep '.' ./*
+  352  mkdir zip
+  353  mv one two three zip
+  354  cd zip
+  355  ls
+  356  mv one two three /home/sharath/folder1
+  357  cd -
+  358  ls
+  359  cp one two three zip
+  360  ls /zip
+  361  ls zip
+  362  gzip zip /home/sharath/Desktop
+  363  cd folder1
+  364  ls
+  365  ls -l
+  366  gzip zip
+  367  ls zip
+  368  gzip one two three 
+  369  ls
+  370  gunzip one.gz two.gz three.gz 
+  371  ls
+  372  gzip -r zip.zip zip
+  373  gzip -r zip
+  374  ls
+  375  ls -l
+  376  cd zip/
+  377  ls
+  378  gunzip -r zip
+  379  gunzip -r zip.gz
+  380  cd -
+  381  gunzip -r zip.gz
+  382  gunzip -r zip
+  383  ls
+  384  ls zip/
+  385  zip zip
+  386  Tar -czvf zip.tar.gz zip
+  387  tar -czvf zip.tar.gz zip
+  388  ls
+  389  ls -l
+  390  ls zip.tar.gz
+  391  tar -cxvf zip.tar.gz zip
+  392  rm zip.tar.gz
+  393  ls -l
+  394  tar -cvzf zip.tar.gz zip
+  395  ls -l
+  396  tar -xvzf zip.tar.gz zip
+  397  ls -l
+  398  ;s -l
+  399  ls -l
+  400  mv zip /home/sharath
+  401  ls -l
+  402  tar -xvzf zip.tar.gz zip
+  403  ls -l
+  404  cd zip
+  405  ls -l
+  406  cd -
+  407  ls 
+  408  cd -
+  409  cd /home/sharath | ls
+  410  cd /home/sharath
+  411  ls 
+  412  cd zip
+  413  ls z
+  414  ls zip
+  415  ls
+  416  cd -
+  417  rm zip
+  418  rm -f zip
+  419  rm -df zip
+  420  rm -r zip
+  421  ls 
+  422  cd folder1
+  423  ls 
+  424  ls
+  425  nano hello.sh
+  426  ls -l
+  427  chmod +x hello.sh 
+  428  ls -l
+  429  ./hello.sh
+  430  mv hello.sh zip.sh 
+  431  ls -l
+  432  nano zip.sh
+  433  ls -l
+  434  ./zip.sh
+  435  nano zip.sh
+  436  ./zip.sh
+  437  ls -l
+  438  ./zip.sh four
+  439  crontab -e
+  440  ls -l
+  441  crontab -e
+  442  ls -l
+  443  crontab -e
+  444  ls -l
+  445  crontab -e
+  446  cd folder1
+  447  ls
+  448  gzip -v zip
+  449  gzip -two
+  450  gzip -v two
+  451  ls 
+  452  gunzip two.gz
+  453  gzip -v two
+  454  du -sh two.gz
+  455  ls c-l
+  456  ls -l
+  457  gunzip two.gz 
+  458  ls-l
+  459  ls -l
+  460  cp two
+  461  cp two two
+  462  cp two two1
+  463  ls -l
+  464  gzip -v two1
+  465  ls -l
+  466  cp two two2
+  467  ls -l
+  468  bzip2 -v two2
+  469  ls -l
+  470  ls -lM
+  471  ls -lm
+  472  du -sh two.gz
+  473  du -sh two1.gz
+  474  du -sh two2.bz2
+  475  du -sh two
+  476  man exec 
+  477  ls -l
+  478  man ls
+  479  ls -lh
+  480  man ls
+  481  ls -ls
+  482  ls -s
+  483  cat two1.gz
+  484  cat two2.bz2
+  485  gzip -r zip
+  486  ls-l
+  487  ls -l
+  488  cd zip
+  489  ls
+  490  cd -
+  491  ls
+  492  gzip zip
+  493  gzip -r zip.gz
+  494  gzip -r zip
+  495  ls -la
+  496  bzip2 -r zip
+  497  bzip2 zip
+  498  ls
+  499  ls -l
+  500  cd /
+  501  ls
+  502  cd bin
+  503  ls
+  504  cd -
+  505  cd /sbin
+  506  ls
+  507  grep 'addusr'
+  508  ls cd -
+  509  cd -
+  510  ls
+  511  cd usr
+  512  ls
+  513  cd games
+  514  ls
+  515  gnome-sudoku 
+  516  cd -
+  517  cd-
+  518  cd -
+  519  cd /
+  520  cd root
+  521  cd /root
+  522  ls
+  523  cd cdrom
+  524  ls
+  525  cd -
+  526  proc
+  527  cd /home/sharath
+  528  proc
+  529  ps
+  530  cd / ls
+  531  cd /
+  532  ls
+  533  cd proc
+  534  ls
+  535  cat cpuinfo
+  536  cd /
+  537  ls
+  538  cd root
+  539  sudo cd root
+  540  root
+  541  sudo cd /root
+  542  ls root
+  543  sudo ls root
+  544  exit
+  545  cd /
+  546  ls
+  547  cd usr
+  548  ls
+  549  cd bin
+  550  ls
+  551  find grep
+  552  locate grep
+  553  ls
+  554  grep 'mdel' bin
+  555  cd-
+  556  cd -
+  557  grep 'mdel' b
+  558  grep 'mdel' bin
+  559  cd /home/sharath
+  560  ls
+  561  ls Desktop
+  562  cd Desktop
+  563  ls
+  564  ls -la
+  565  ls -f
+  566  man ls
+  567  cd .
+  568  cd ..
+  569  ls
+  570  cd .
+  571  cd ..
+  572  ls
+  573  locate ls
+  574  find ls
+  575  cd bin
+  576  ls
+  577  cat ls
+  578  cd /
+  579  cd /bin
+  580  find ls
+  581  man ;ls
+  582  man ls
+  583  find cat
+  584  cat cat
+  585  ls
+  586  cd /
+  587  pwd
+  588  which ls
+  589  ls
+  590  cd usr | ls
+  591  cd usr
+  592  ls
+  593  cd /usr | ls
+  594  cd /
+  595  cd root
+  596  sudo root
+  597  cd dev
+  598  ls
+  599  find mouse
+  600* cat 
+  601  ls -l
+  602  cd /
+  603  cd /home/sharath | ls
+  604  cd /home/sharath
+  605  pwd
+  606  ls
+  607  pwd
+  608  cd Public
+  609  ;ls
+  610  ls
+  611  cd -
+  612  locate grep
+  613  locate bin/grep
+  614  cd usr/bin/grep
+  615  cd usr/bin/
+  616  cd /usr/bin/
+  617  find grep
+  618  ls -l
+  619  ls g
+  620  ls 'g'
+  621  ls -lM
+  622  ls -M
+  623  ls -m
+  624  ls -lh
+  625  man ls
+  626  ls -m
+  627  cd /home/sharath
+  628  pwd
+  629  history >>historyfile |grep 'pv' historyfile
+  630  ls
+  631  cat historyfile
+  632  history >historyfile |grep 'ps' historyfile
+  633  history >historyfile | grep -n 'ps' historyfile
+  634  ps
+  635  rm historyfile 
+  636  ls
+  637  locate mouse
+  638  clear
+  639  cd /etc
+  640  ls
+  641  cat group
+  642  cat passwd
+  643  clear
+  644  locate help
+  645  cd lib
+  646  cd -
+  647  cd lib
+  648  pwd
+  649  cd /
+  650  cd lib
+  651  find help]
+  652  find help
+  653  ls
+  654  cd /
+  655  ls
+  656  cd srv
+  657  ls
+  658  ls -la
+  659  cd /usr
+  660  ls
+  661  man ps
+  662  ps -pid
+  663  ps -plist
+  664  man ps
+  665  ps -u
+  666  cd /run
+  667  ls
+  668  cat acpid.pid
+  669  cd /
+  670  ls -la
+  671  find .bashrc
+  672  locate .bashrc
+  673  cd etc
+  674  ls
+  675  ls -l
+  676  find .bashrc
+  677  cat crontab
+  678  ls
+  679  cat bash.bashrc
+  680  cd /
+  681  cd /home/sharath
+  682  ls -l
+  683  pwd
+  684  car .bashrc
+  685  cat .bashrc
+  686  goog
+  687  history
+  688  clear
+  689  history 
+  690  history -1
+  691  history -n1
+  692  man history
+  693  history -n
+  694  history
+  695  history >history | grep -n3 >historyline
+  696  man grep
+  697  history >history | grep -3 >historyline
+  698  history >history | grep -n3 >historyline
+  699  history >history | grep 3 >historyline

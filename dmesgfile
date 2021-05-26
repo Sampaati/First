@@ -1,0 +1,10 @@
+[   38.443316] kauditd_printk_skb: 25 callbacks suppressed
+[   38.443319] audit: type=1400 audit(1620736267.325:37): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=787 comm="cups-browsed" capability=23  capname="sys_nice"
+[   39.514912] e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   39.516188] IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+[   72.505363] rfkill: input handler disabled
+[  172.614647] rfkill: input handler enabled
+[  204.179623] rfkill: input handler disabled
+[  210.290670] ISO 9660 Extensions: Microsoft Joliet Level 3
+[  211.896940] ISO 9660 Extensions: RRIP_1991A
+[  652.213668] hrtimer: interrupt took 5128010 ns

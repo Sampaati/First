@@ -1,0 +1,7 @@
+ls: cannot access 'output2': No such file or directory
+ls: cannot access 'output': No such file or directory
+totaloutput
+totaloutput
+ls: cannot access 'output5': No such file or directory
+ls: cannot access 'seven': No such file or directory
+ls: cannot access 'seven': No such file or directory
